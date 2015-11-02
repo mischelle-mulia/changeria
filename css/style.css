@@ -1,0 +1,89 @@
+body {
+  background-image: url(../assets/BACKGROUND.png);
+  background-position: center center; 
+}
+
+body::after {
+  background-image: url(../assets/BACKGROUND_CAVE.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+.islands {
+  padding: 240px 0 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+.island {
+  padding: 32px;
+  text-align: center;
+}
+
+.island img {
+  max-width: 100%;
+}
+
+.balloon img {
+  max-width: 30%;
+  text-align: center;
+  z-index: 4;
+}
+
+.balloon-position img {
+  position: relative;
+  transform: translate(20%, -200%);
+}
+
+/* Bootstrap Overrides */
+
+.modal-content {
+  background-image: url(../assets/PAPER.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+}
+
+/* stagger classes */
+
+@media screen and (min-width: 768px) {
+  .island {
+    padding: 0;
+  }
+  .container {
+    max-width: 880px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .stagger-up img {
+    position: relative;
+    transform: translateY(-30%);
+  }
+
+  .stagger-down img {
+    position: relative;
+    transform: translateY(30%);
+  }
+    .stagger-early img {
+    position: relative;
+    transform: translate(40%, -70%);
+  }
+
+  .stagger-left img {
+    transform: translateX(-13%);
+  }
+  
+}
+
