@@ -1,7 +1,11 @@
 body {
   background-image: url(../assets/BACKGROUND.png);
   background-position: center center; 
+  font-family: "Quattrocentro";
 }
+
+
+
 
 body::after {
   background-image: url(../assets/BACKGROUND_CAVE.png);
@@ -45,13 +49,38 @@ body::after {
 }
 
 /* Bootstrap Overrides */
+.modal-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../assets/PAPER.JPG);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 10%;
+  content: '';
+}
 
-.modal-content {
+.modal-content{
   background-image: url(../assets/PAPER.jpg);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   content: '';
+  text-align: center;
+}
+
+.modal-header {
+  min-height: 16.42857143px;
+  padding: 15px;
+  border-bottom: 2px solid #E7CEA2;
+}
+
+.modal-footer {
+  padding: 15px;
+  text-align: center;
+  border-top: 2px solid #E7CEA2;
 }
 
 /* stagger classes */
