@@ -46,14 +46,7 @@ body::after {
 
 /* Bootstrap Overrides */
 
-.modal-content {
-  background-image: url(../assets/PAPER.jpg);
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  content: '';
-  position: absolute;
-}
+
 
 /* stagger classes */
 
