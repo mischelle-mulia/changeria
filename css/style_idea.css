@@ -1,7 +1,6 @@
 body {
-  background-image: url(../assets/background_v3.png);
+  background-image: url(../assets/BACKGROUND.png);
   background-position: center center; 
-  font-family: "Quattrocentro";
 }
 
 body::after {
@@ -18,6 +17,7 @@ body::after {
   z-index: 1;
 }
 
+
 .islands {
   padding: 240px 0 0 0;
   position: relative;
@@ -31,6 +31,7 @@ body::after {
 
 .island img {
   max-width: 100%;
+  padding:10px;
 }
 
 .balloon img {
@@ -44,40 +45,28 @@ body::after {
   transform: translate(20%, -200%);
 }
 
+.village img {
+  max-width: 30%;
+  text-align: center;
+  z-index: 4;
+}
+
+#village1 img{
+  position: relative;
+  transform: translate(10%, -300%);
+}
+#village2 img{
+  position: relative;
+  transform: translate(20%, -250%);
+}
+#village3 img{
+  position: relative;
+  transform: translate(15%, -300%);
+}
+
 /* Bootstrap Overrides */
-.modal-container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url(../assets/PAPER.JPG);
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 10%;
-  content: '';
-}
 
-.modal-content{
-  background-image: url(../assets/PAPER.jpg);
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  content: '';
-  text-align: center;
-}
 
-.modal-header {
-  min-height: 16.42857143px;
-  padding: 15px;
-  border-bottom: 2px solid #E7CEA2;
-}
-
-.modal-footer {
-  padding: 15px;
-  text-align: center;
-  border-top: 2px solid #E7CEA2;
-}
 
 /* stagger classes */
 
